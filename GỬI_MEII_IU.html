@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gửi Mêi 💌</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #444;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      color: #ff6699;
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .gif {
+      width: 150px;
+      margin: 1rem auto;
+      animation: float 2s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    .reasons {
+      background: #fff0f5;
+      padding: 1rem;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: 2rem auto;
+      text-align: left;
+    }
+    .reasons li {
+      margin: 0.5rem 0;
+    }
+    button {
+      background-color: #ff99cc;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      margin-top: 1.5rem;
+    }
+    .message {
+      font-weight: bold;
+      margin-top: 1rem;
+      color: #cc3366;
+      min-height: 2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Gửi Mêi của Nhi 💖</h1>
+  <img class="gif" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmU2dXhiOXZhcm02dmplZmZzYXg0NmliemRmcWl3M2t6ZmVhMGtxMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/NdKVEei95yvIY/giphy.gif" alt="Cute heart">
+  <p>"Em hiểu nếu Mêi cần thời gian để suy nghĩ, và em sẽ tôn trọng điều đó. Mêi chỉ cần biết là khi Mêi sẵn sàng nói chuyện thì em vẫn ở đây và em vẫn yêu Mêi, vẫn thương Mêi lắm. Nếu Mêi buồn thì Mêi cứ nói với em, em sẽ không phán xét đâu mà, em chỉ thương Mêi thoi. Iuuuuuu (Thề đoạn này ko Chat GPT, xin lỗi vì đã sến 😭)"</p>
+
+  <div class="reasons">
+    <h2>Vì sao em yêu Mêi 💘</h2>
+    <ul>
+      <li>Vì Mêi dễ thương</li>
+      <li>Mêi gửi web ngố ngố để làm em vui hơn</li>
+      <li>Mêi chiều em dù bản thân không dư dả</li>
+      <li>Mêi tặng em mí con gấu siu đáng iu, ôm là ngủ ngon liền</li>
+      <li>Mêi chịu selfie gửi cho em xem dù Mêi ngại camera</li>
+      <li>Mêi dễ thương nữa nè!</li>
+      <li>Và... dễ thương lắm luôn ó 🥺</li>
+    </ul>
+  </div>
+
+  <button onclick="showMessage()">Nhấn vào đây nè Mêi ơi 💓</button>
+  <div class="message" id="randomMsg"></div>
+
+  <script>
+    const messages = [
+      "Em thưn Mêi nhiều lắm lun á 💗",
+      "Mêi đừng buồn nữa nha, thưn lắm",
+      "Yêu Mêi nhìu lắmmm",
+      "Mêi nhớ ăn uống đầy đủ đó nheee"
+    ];
+
+    function showMessage() {
+      const msg = messages[Math.floor(Math.random() * messages.length)];
+      document.getElementById("randomMsg").innerText = msg;
+    }
+  </script>
+</body>
+</html>
